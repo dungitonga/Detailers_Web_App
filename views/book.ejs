@@ -1,0 +1,34 @@
+<%- include("partials/header"); -%>
+        
+<!--booking section starts-->
+<section class="booking">
+    <h1 class="heading-title">Booking Page</h1>
+    <form action="/book" method="post" class="book-form">
+        <div class="flex">
+            <div class="InputBox">
+                <span>name:</span>
+                <input type="text" placeholder="Enter your name" name="name">
+            </div>
+            <div class="InputBox">
+                <span>email:</span>
+                <input type="email" placeholder="Enter your email" name="email">
+            </div>
+            <div class="InputBox">
+                <span>phone number:</span>
+                <input type="number" placeholder="Enter your number" name="phone">
+            </div>
+            <div class="InputBox">
+                <span>date:</span>
+                <input type="date" name="date">
+            </div>
+            <div class="InputBox">
+                <span>service:</span>
+                <input type="text" placeholder="Ceramic/Buffing/Tint" name="service">
+            </div>
+        </div>
+        <input type="submit" value="submit" class="btn" name="send">  
+    </form>
+</section>
+<!--booking section ends-->
+
+<%- include("partials/footer"); -%>
