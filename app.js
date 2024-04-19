@@ -7,6 +7,7 @@ const https = require("https");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 
 const app = express();
@@ -16,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://ianjecinta:cgBtrojpcvdYutjt@cluster0.iqwimjp.mongodb.net/detailersDB");
+mongoose.connect(process.env.MONGODB_CONNECT);
 
 const itemsSchema = {
   title : {type : String, required : true},
@@ -129,7 +130,7 @@ app.post("/sign-up", function(req, res){
 
   const option = {
    method: "POST",
-   auth: "iain1:e0aaf07fbce9ff667f743165dac5bda1-us22"
+   auth: process.env.WEATHER_API_KEY
 
   }
 
