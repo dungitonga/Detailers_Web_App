@@ -130,11 +130,7 @@ app.post("/sign-up", function(req, res){
 
   const option = {
    method: "POST",
-<<<<<<< HEAD
-   auth: process.env.WEATHER_API_KEY
-=======
    auth: process.env.MAILCHIMP_API
->>>>>>> b04f737232c2bbd7084862c687b40b030679487a
 
   }
 
