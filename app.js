@@ -130,7 +130,11 @@ app.post("/sign-up", function(req, res){
 
   const option = {
    method: "POST",
+<<<<<<< HEAD
    auth: process.env.WEATHER_API_KEY
+=======
+   auth: process.env.MAILCHIMP_API
+>>>>>>> b04f737232c2bbd7084862c687b40b030679487a
 
   }
 
@@ -154,6 +158,6 @@ app.post("/sign-up", function(req, res){
 
 });
 
-app.listen(process.env.PORT || 3000, function() {
-  console.log("Server started on port 3000");
+app.listen(10000, function() {
+  console.log("Server started on port 10000");
 });
