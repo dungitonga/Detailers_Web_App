@@ -7,6 +7,7 @@ const https = require("https");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 
 const app = express();
@@ -153,6 +154,6 @@ app.post("/sign-up", function(req, res){
 
 });
 
-app.listen(process.env.LISTEN_PORT || 3000, function() {
-  console.log("Server started on port 3000");
+app.listen(10000, function() {
+  console.log("Server started on port 10000");
 });
