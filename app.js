@@ -154,6 +154,6 @@ app.post("/sign-up", function(req, res){
 
 });
 
-app.listen(10000, function() {
-  console.log("Server started on port 10000");
+app.listen(process.env.PORT || 3000, function() {
+  console.log("Server started");
 });
