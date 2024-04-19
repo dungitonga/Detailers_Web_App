@@ -23,7 +23,7 @@ but i decided to come back a build a bettter version with the better technologie
 * Deployment: 
 
 # Usage
-Check it out at <...> to engage and read through the blogposts.
+Check it out at https://detailers-web-app.onrender.com/ to engage and read through the blogposts.
 
 # Contributing
 You can fork the project and add features, fix bugs or send me your feedback
